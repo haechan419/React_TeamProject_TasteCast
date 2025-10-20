@@ -170,6 +170,14 @@ src/
 
 ---
 
+### 🌙 다크모드
+- **다크모드 기능 구현**  
+- 사용자 환경에 따라 테마 자동 적용  
+
+![다크모드](./images/darkMode.gif)
+
+---
+
 ## 👥 팀원 역할 분담
 
 ### 👩‍💻 김지원
@@ -205,19 +213,76 @@ src/
 ---
 
 ### 👨‍💻 한해찬
-- **OpenWeatherMap API** 적용  
-- 날씨 API와 더미데이터의 **날씨 필터링 기능 구현**  
+- OpenWeatherMap API 적용  
+- 날씨 API와 더미데이터의 날씨 필터링 기능 구현  
 - 네비게이션 바 UI 및 기능 구현  
-- **KakaoMap API**로 현재 사용자 지역 출력  
-- **OpenWeather 아이콘**을 날씨 상태에 따라 변경  
-- 메인 페이지 **좋아요 버튼 기능 구현**  
+- KakaoMap API로 현재 사용자 지역 출력  
+- OpenWeather 아이콘을 날씨 상태에 따라 변경  
+- 메인 페이지 좋아요 버튼 기능 구현  
 - Flow Chart 제작  
 - 메인 페이지 UI 및 기능 구현  
 - 기능별 컴포넌트 분리  
 - 레시피 클릭 시 상세 페이지 이동  
-- **다크모드 기능 구현**  
+- 다크모드 기능 구현  
 - 코드 통합  
 - SPA 라우팅 기능 구현  
+
+---
+
+## 💻 개발 환경
+
+| 구분 | 내용 |
+|:----:|:----|
+| **언어** | JavaScript, CSS |
+| **개발 도구** | React |
+| **IDE** | Visual Studio Code |
+| **운영체제** | Windows |
+
+---
+
+## 🌐 접속 주소
+- **프론트엔드** : [http://localhost:3000](http://localhost:3000)
+
+---
+
+## 🛠 기술 스택
+
+### 프론트엔드
+- **React** : 18  
+- **React-DOM** : 18  
+- **React-Router-DOM** : 7, 9, 4  
+- **React-Virtualized** : 9.22.6  
+- **SASS** : 1.93.2  
+- **axios** : 1.12.2
+
+---
+
+## ⚙️ 환경 변수 및 설치
+
+프로젝트 실행 전, 다음 환경 변수를 설치 및 설정해주세요.
+
+```bash
+# Yarn 전역 설치
+npm install -g yarn
+
+# React 관련 패키지 설치
+yarn add react@18 react-dom@18 
+
+# 스타일링 및 아이콘 패키지 설치
+yarn add sass classnames react-icons
+
+# 가상 스크롤
+yarn add react-virtualized
+
+# 라우팅
+yarn add react-router-dom
+
+# HTTP 요청
+yarn add axios
+
+# styled-components
+yarn add styled-components
+```
 
 ---
 
@@ -237,6 +302,7 @@ src/
 | 레시피 추가 | 레시피 수정 |
 |:------------:|:------------:|
 | ![추가 페이지](./images/createRecipe.png) | ![수정 페이지](./images/update_page.png) |
+
 
 
 
