@@ -16,6 +16,53 @@
 📘 프로젝트 노션: [React Project Notion](https://www.notion.so/React-Project-5-28caa939b4b3808eb6d8c6c5236f855b)
 
 ---
+
+개발 기간
+- 25년 10월 13일 (월) ~ 25년 10월 20일 (월) 총 8일
+
+---
+
+팀원
+김지원
+박건영
+한해찬
+
+- 팀장 : 김지원
+- 팀원 : 박건영, 한해찬
+
+## 7. API 명세서
+
+| API 이름 | 현재 위치 날씨 조회API |
+| --- | --- |
+| 기능 설명 | latitude, longitude를 기반으로 현재 날씨 정보를 조회 |
+| 요청 URL | https://api.openweathermap.org/data/2.5/weather |
+| Method | GET |
+| 요청 파라미터 | <ul><li>`lat` : 위도 (예: `37.5665`)</li><li>`lon` : 경도 (예: `126.9780`)</li><li>`appid` : OpenWeather API Key</li><li>`lang` : 언어 코드 (예: `"en"`)</li><li>`units` : 단위 (예: `"metric"` → 섭씨)</li></ul> |
+| 요청 예시 | https://api.openweathermap.org/data/2.5/weather?lat=37.5665&lon=126.9780&appid=af13879ad6b38a34dc000a5f2bc5df90&lang=en&units=metric |
+| 요청 헤더 | 없음 |
+| 응답 형식 | JSON |
+| 응답 예시(성공) | json { "coord": { "lon": 126.978, "lat": 37.5665 }, "weather": [ { "main": "Clouds", "description": "broken clouds" } ], "main": { "temp": 20.5, "feels_like": 20.2, "humidity": 60 }, "wind": { "speed": 3.5 }, "name": "Seoul" } |
+| 응답 코드 | 200 OK |
+| 에러 예시 | json { "cod": 401, "message": "Invalid API key." } |
+| 에러 코드 | 400 Bad Request(잘못된 요청), 401 Unauthorized(API 키 오류) |
+| 비고 | <ul><li>무료 버전은 초당 60회 호출 제한</li><li>언어(`lang`)를 `"kr"`로 설정하면 한글로도 가능</li></ul> |
+
+| API 이름 | 좌표 기반 행정구역명 조회 API |
+| --- | --- |
+| 기능 설명 | latitude, longitude를 이용해 해당 좌표의 행정구역(구/군 단위)를 조회 |
+| 요청 URL | `https://dapi.kakao.com/v2/local/geo/coord2address.json` |
+| Method | GET |
+| 요청 파라미터 | <ul><li>`x` : 경도 (longitude)</li><li>`y` : 위도 (latitude)</li></ul> |
+| 요청 예시 | "https://dapi.kakao.com/v2/local/geo/coord2address.json?x=126.9780&y=37.5665" \ -H "Authorization: KakaoAK 5181242ef139662b62dcb7b691d43139" |
+| 요청 헤더 | `Authorization: KakaoAK {REST_API_KEY}` |
+| 응답 형식 | JSON |
+| 응답 예시(성공) | json { "documents": [ { "address": { "region_1depth_name": "서울특별시", "region_2depth_name": "중구", "region_3depth_name": "태평로1가" } } ] } |
+| 응답 코드 | 200 OK |
+| 에러 예시 | json { "code": -2, "msg": "Invalid API key" } |
+| 에러 코드 | 400 Bad Request(잘못된 요청), 401 Unauthorized(API 키 오류) |
+| 비고 | <ul><li>좌표 기준은 WGS84 (일반적인 GPS 좌표계)</li><li>일일 호출 제한: 무료 30,000회</li></ul> |
+
+--
 ## 프로젝트 구조
 index.js
 App.js
@@ -160,6 +207,7 @@ src/
 
 ### 🧭 Flow Chart
 ![Flow Chart](./images/flow_chart.drawio.png)
+
 
 
 
