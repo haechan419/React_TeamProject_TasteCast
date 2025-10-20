@@ -271,7 +271,7 @@ src/
 ### 프론트엔드
 - **React** : 18  
 - **React-DOM** : 18  
-- **React-Router-DOM** : 7, 9, 4  
+- **React-Router-DOM** : 7.9.4  
 - **React-Virtualized** : 9.22.6  
 - **SASS** : 1.93.2  
 - **axios** : 1.12.2
@@ -304,6 +304,7 @@ yarn add axios
 # styled-components
 yarn add styled-components
 ```
+
 
 
 
