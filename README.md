@@ -103,15 +103,15 @@ src/
   │   ├── transWeatherDescription.js
   │   └── useKakaoDistrict.js
   ├── pages/
-  │   ├── Home/
-  │   │   └── Home.js
-  │   ├── RecipeCreate/
-  │   │   └── RecipeCreate.js
-  │   ├── RecipeDetail/
-  │   │   └── RecipeDetail.js
-  │   └── RecipeList/
-  │       └── RecipeList.js
-
+     ├── Home/
+     │   └── Home.js
+     ├── RecipeCreate/
+     │   └── RecipeCreate.js
+     ├── RecipeDetail/
+     │   └── RecipeDetail.js
+     └── RecipeList/
+         └── RecipeList.js
+```
 ---
 
 ## ⚙️ 구현할 핵심 기능
@@ -225,6 +225,11 @@ src/
 
 ### 🧭 Flow Chart
 ![Flow Chart](./images/flow_chart.drawio.png)
+![메인 페이지](./images/main_page.png)
+![전체 레시피](./images/all.png)
+![추가 페이지](./images/createRecipe.png)
+![수정 페이지](./images/update_page.png)
+
 
 
 
