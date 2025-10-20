@@ -115,4 +115,5 @@
 ### 🧭 Flow Chart
 (Flow Chart 이미지를 아래 위치에 추가해주세요.)  
 ```markdown
-![Flow Chart](./images/flowchart.png)
+![Flow Chart](./images/flow_chart.drawio.png)
+
