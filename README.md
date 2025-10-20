@@ -116,7 +116,11 @@ src/
 - 새로운 레시피를 사용자가 직접 등록할 수 있음  
 - 등록된 레시피 및 기존 레시피 조회 가능  
 - 기존 레시피 수정 가능  
-- 저장된 레시피 삭제 가능  
+- 저장된 레시피 삭제 가능
+
+![CRU](./images/CRU.gif)
+
+![D](./images/D.gif)
 
 ---
 
@@ -126,29 +130,39 @@ src/
   - 전체 레시피  
   - 레시피 추가  
 
+![SPA](./images/router.gif)
+
 ---
 
 ### 📜 가상 스크롤
 - **React-Virtualized**를 사용하여 2,500개 이상의 데이터를 효율적으로 렌더링  
-- 브라우저 성능 저하 방지  
+- 브라우저 성능 저하 방지
+
+![가상 스크롤](./images/scroll.gif)
 
 ---
 
 ### ⚡ 코드 스플리팅
-- **React.lazy** + **Suspense**를 사용하여 이미지가 많은 페이지의 초기 로딩 속도 개선  
+- **React.lazy** + **Suspense**를 사용하여 이미지가 많은 페이지의 초기 로딩 속도 개선
+
+![코드 스플리팅](./images/lazy_suspense.gif) 
 
 ---
 
 ### 🌍 외부 데이터 연동
 - **Geolocation API**를 사용해 사용자 위치(위도, 경도) 확인  
 - **Kakao Map API**로 지역명(구/군) 조회  
-- **OpenWeather API**로 지역의 날씨 정보 확인  
+- **OpenWeather API**로 지역의 날씨 정보 확인
+
+![외부 데이터 연동](./images/api.gif)
 
 ---
 
 ### 📱 반응형 웹
 - **PC / 태블릿 / 모바일** 환경 대응  
-- 네비게이션바 및 메인 화면 반응형 디자인 적용  
+- 네비게이션바 및 메인 화면 반응형 디자인 적용
+
+![반응형 웹](./images/web.gif)
 
 ---
 
@@ -207,6 +221,7 @@ src/
 
 ### 🧭 Flow Chart
 ![Flow Chart](./images/flow_chart.drawio.png)
+
 
 
 
