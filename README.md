@@ -225,10 +225,19 @@ src/
 
 ### 🧭 Flow Chart
 ![Flow Chart](./images/flow_chart.drawio.png)
-![메인 페이지](./images/main_page.png)
-![전체 레시피](./images/all.png)
-![추가 페이지](./images/createRecipe.png)
-![수정 페이지](./images/update_page.png)
+
+---
+
+### 🖥️ UI 미리보기
+
+| 메인 페이지 | 전체 레시피 |
+|:------------:|:------------:|
+| ![메인 페이지](./images/main_page.png) | ![전체 레시피](./images/all.png) |
+
+| 레시피 추가 | 레시피 수정 |
+|:------------:|:------------:|
+| ![추가 페이지](./images/createRecipe.png) | ![수정 페이지](./images/update_page.png) |
+
 
 
 
