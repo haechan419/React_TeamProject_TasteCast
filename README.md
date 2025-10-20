@@ -16,6 +16,52 @@
 📘 프로젝트 노션: [React Project Notion](https://www.notion.so/React-Project-5-28caa939b4b3808eb6d8c6c5236f855b)
 
 ---
+## 프로젝트 구조
+index.js
+App.js
+src/
+  ├──components/
+      ├──common/
+          ├──Filters/
+              ├──Filters.js
+          ├──ImageUploadBox/
+              ├──ImageUploadBox.js
+          ├──LikeButton/
+              ├──LikeButton.js
+          ├──WeatherInfo/
+              ├──WeatherInfo.js
+      ├──recipe/
+          ├──IngredientManager/
+              ├──IngredientManager.js
+          ├──RecipeFilter/
+              ├──RecipeFilter.js
+          ├──RecipeItem/
+              ├──RecipeItem.js
+  ├──data/
+      ├──dummyRecipes_2500.js
+      ├──dummyRecipes.js
+  ├──hooks
+      ├──useGeolocation.js
+      ├──useKakaoDistrict.js
+      ├──useWeather.js
+  ├──layout/
+      ├──Layout.jst
+  ├──modules/
+      ├──toggleLike.js
+      ├──transWeatherDescription.js
+      ├──useKakaoDistrict.js
+  ├──pages
+      ├──Home/
+          ├──Home.js
+      ├──RecipeCreate/
+          ├──RecipeCreate.js
+      ├──RecipeDetail/
+          ├──RecipeDetail.js
+      ├──RecipeList/
+          └──RecipeList.js
+
+
+---
 
 ## ⚙️ 구현할 핵심 기능
 
@@ -114,6 +160,7 @@
 
 ### 🧭 Flow Chart
 ![Flow Chart](./images/flow_chart.drawio.png)
+
 
 
 
