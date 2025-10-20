@@ -254,10 +254,10 @@ src/
 
 | 구분 | 내용 |
 |:----:|:----|
-| **언어** | JavaScript, CSS |
-| **개발 도구** | React |
-| **IDE** | Visual Studio Code |
-| **운영체제** | Windows |
+| **언어** | `JavaScript`, `CSS` |
+| **개발 도구** | `React` |
+| **IDE** | `Visual Studio Code` |
+| **운영체제** | `Windows` |
 
 ---
 
@@ -304,6 +304,7 @@ yarn add axios
 # styled-components
 yarn add styled-components
 ```
+
 
 
 
