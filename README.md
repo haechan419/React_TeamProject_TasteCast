@@ -232,11 +232,12 @@ src/
 
 | 메인 페이지 | 전체 레시피 |
 |:------------:|:------------:|
-| ![메인 페이지](./images/main_page.png) | ![전체 레시피](./images/all.png) |
+| ![메인 페이지](./images/main_page.png) | ![전체 레시피](./images/allRecipe.png) |
 
 | 레시피 추가 | 레시피 수정 |
 |:------------:|:------------:|
 | ![추가 페이지](./images/createRecipe.png) | ![수정 페이지](./images/update_page.png) |
+
 
 
 
