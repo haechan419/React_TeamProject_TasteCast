@@ -38,7 +38,7 @@
 | **요청 URL** | `https://api.openweathermap.org/data/2.5/weather` |
 | **Method** | `GET` |
 | **요청 파라미터** | <ul><li>`lat` : 위도 (예: `37.5665`)</li><li>`lon` : 경도 (예: `126.9780`)</li><li>`appid` : OpenWeather API Key</li><li>`lang` : 언어 코드 (`en`, `kr` 등)</li><li>`units` : 단위 (`metric` → 섭씨)</li></ul> |
-| **요청 예시** | `https://api.openweathermap.org/data/2.5/weather?lat=37.5665&lon=126.9780&appid=af13879ad6b38a34dc000a5f2bc5df90&lang=en&units=metric` |
+| **요청 예시** | `https://api.openweathermap.org/data/2.5/weather?lat=37.5665&lon=126.9780&appid=**비밀**&lang=en&units=metric` |
 | **요청 헤더** | 없음 |
 | **응답 형식** | JSON |
 | **응답 예시 (성공)** | ```json { "coord": { "lon": 126.978, "lat": 37.5665 }, "weather": [ { "main": "Clouds", "description": "broken clouds" } ], "main": { "temp": 20.5, "feels_like": 20.2, "humidity": 60 }, "wind": { "speed": 3.5 }, "name": "Seoul" } ``` |
@@ -57,7 +57,7 @@
 | **요청 URL** | `https://dapi.kakao.com/v2/local/geo/coord2address.json` |
 | **Method** | `GET` |
 | **요청 파라미터** | <ul><li>`x` : 경도 (longitude)</li><li>`y` : 위도 (latitude)</li></ul> |
-| **요청 예시** | `"https://dapi.kakao.com/v2/local/geo/coord2address.json?x=126.9780&y=37.5665" \ -H "Authorization: KakaoAK 5181242ef139662b62dcb7b691d43139"` |
+| **요청 예시** | `"https://dapi.kakao.com/v2/local/geo/coord2address.json?x=126.9780&y=37.5665" \ -H "Authorization: KakaoAK **비밀**"` |
 | **요청 헤더** | `Authorization: KakaoAK {REST_API_KEY}` |
 | **응답 형식** | JSON |
 | **응답 예시 (성공)** | ```json { "documents": [ { "address": { "region_1depth_name": "서울특별시", "region_2depth_name": "중구", "region_3depth_name": "태평로1가" } } ] } ``` |
@@ -304,6 +304,7 @@ yarn add axios
 # styled-components
 yarn add styled-components
 ```
+
 
 
 
