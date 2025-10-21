@@ -207,8 +207,6 @@ src/
 본 프로젝트에서는 **OpenWeatherMap API**와 **Kakao Map API**를 활용하여  
 사용자의 **현재 날씨 정보**와 **행정구역(위치)** 데이터를 실시간으로 조회합니다.
 
----
-
 ### 🌤️ 현재 위치 날씨 조회 API
 
 | 항목 | 내용 |
@@ -226,7 +224,6 @@ src/
 | **에러 코드** | `400 Bad Request`, `401 Unauthorized` |
 | **비고** | <ul><li>무료 버전 기준 초당 60회 호출 제한</li><li>`lang="kr"` 설정 시 한글 출력 지원</li></ul> |
 
----
 
 ### 🗺️ 좌표 기반 행정구역명 조회 API (Kakao Map)
 
@@ -245,7 +242,6 @@ src/
 | **에러 코드** | `400 Bad Request`, `401 Unauthorized` |
 | **비고** | <ul><li>좌표 기준: WGS84 (일반 GPS 좌표계)</li><li>무료 호출 제한: 일 30,000회</li></ul> |
 
----
 
 ### 💡 요약
 
@@ -254,7 +250,6 @@ src/
 | **OpenWeatherMap** | 사용자 위치 기반 날씨 조회 | REST API (`GET`) | `lang=kr`, `units=metric` 사용 |
 | **Kakao Map (coord2address)** | 위도·경도를 통한 행정구역명 조회 | REST API (`GET`) | `Authorization` 헤더 필요 |
 
----
 
 📍 **활용 예시**
 - 앱 실행 시 사용자 위치를 기반으로 실시간 날씨 데이터와 지역명 출력  
@@ -325,6 +320,7 @@ yarn add styled-components
 앞으로는 **사용자 리뷰**, **AI 기반 레시피 추천**, **커뮤니티 기능** 등으로 기능을 확장하여 더욱 풍부한 사용자 경험을 제공하는 방향으로 발전시킬 계획입니다.  
 
 감사합니다.
+
 
 
 
