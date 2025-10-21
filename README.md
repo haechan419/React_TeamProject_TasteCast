@@ -29,65 +29,57 @@
 | [<img src="https://github.com/jwantit.png" width="80" height="80">](https://github.com/jwantit) | [<img src="https://github.com/keonyeong.png" width="80" height="80">](https://github.com/keonyeong) | [<img src="https://github.com/haechan419.png" width="80" height="80">](https://github.com/haechan419) |
 | **김지원** | **박건영** | **한해찬** |
 
+---
+
+## 💻 개발 환경
+
+| 구분 | 내용 |
+|:----:|:----|
+| **언어** | ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=Javascript&logoColor=white) ![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=CSS3&logoColor=white) |
+| **개발 도구** | ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=white) |
+| **IDE** | ![VSCode](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=VisualStudioCode&logoColor=white) |
+| **운영체제** | ![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=Windows&logoColor=white) |
 
 ---
 
-## 🧭 API 명세서
+## 🛠 기술 스택
 
-### 🌤️ 현재 위치 날씨 조회 API
-
-| 항목 | 내용 |
-|------|------|
-| **기능 설명** | latitude, longitude를 기반으로 현재 날씨 정보를 조회 |
-| **요청 URL** | `https://api.openweathermap.org/data/2.5/weather` |
-| **Method** | `GET` |
-| **요청 파라미터** | <ul><li>`lat` : 위도 (예: `37.5665`)</li><li>`lon` : 경도 (예: `126.9780`)</li><li>`appid` : OpenWeather API Key</li><li>`lang` : 언어 코드 (`en`, `kr` 등)</li><li>`units` : 단위 (`metric` → 섭씨)</li></ul> |
-| **요청 예시** | `https://api.openweathermap.org/data/2.5/weather?lat=37.5665&lon=126.9780&appid=**비밀**&lang=en&units=metric` |
-| **요청 헤더** | 없음 |
-| **응답 형식** | JSON |
-| **응답 예시 (성공)** | ```json { "coord": { "lon": 126.978, "lat": 37.5665 }, "weather": [ { "main": "Clouds", "description": "broken clouds" } ], "main": { "temp": 20.5, "feels_like": 20.2, "humidity": 60 }, "wind": { "speed": 3.5 }, "name": "Seoul" } ``` |
-| **응답 코드** | `200 OK` |
-| **에러 예시** | ```json { "cod": 401, "message": "Invalid API key." } ``` |
-| **에러 코드** | `400 Bad Request`, `401 Unauthorized` |
-| **비고** | <ul><li>무료 버전은 초당 60회 호출 제한</li><li>언어(`lang`)를 `"kr"`로 설정하면 한글 출력 가능</li></ul> |
+### 프론트엔드
+- **React** : 18  
+- **React-DOM** : 18  
+- **React-Router-DOM** : 7.9.4  
+- **React-Virtualized** : 9.22.6  
+- **SASS** : 1.93.2  
+- **axios** : 1.12.2
 
 ---
 
-### 🗺️ 좌표 기반 행정구역명 조회 API
+## ⚙️ 환경 변수 및 설치
 
-| 항목 | 내용 |
-|------|------|
-| **기능 설명** | latitude, longitude를 이용해 해당 좌표의 행정구역(구/군 단위)을 조회 |
-| **요청 URL** | `https://dapi.kakao.com/v2/local/geo/coord2address.json` |
-| **Method** | `GET` |
-| **요청 파라미터** | <ul><li>`x` : 경도 (longitude)</li><li>`y` : 위도 (latitude)</li></ul> |
-| **요청 예시** | `"https://dapi.kakao.com/v2/local/geo/coord2address.json?x=126.9780&y=37.5665" \ -H "Authorization: KakaoAK **비밀**"` |
-| **요청 헤더** | `Authorization: KakaoAK {REST_API_KEY}` |
-| **응답 형식** | JSON |
-| **응답 예시 (성공)** | ```json { "documents": [ { "address": { "region_1depth_name": "서울특별시", "region_2depth_name": "중구", "region_3depth_name": "태평로1가" } } ] } ``` |
-| **응답 코드** | `200 OK` |
-| **에러 예시** | ```json { "code": -2, "msg": "Invalid API key" } ``` |
-| **에러 코드** | `400 Bad Request`, `401 Unauthorized` |
-| **비고** | <ul><li>좌표 기준은 WGS84 (일반 GPS 좌표계)</li><li>무료 호출 제한: 일 30,000회</li></ul> |
+프로젝트 실행 전, 다음 환경 변수를 설치 및 설정해주세요.
 
----
+```bash
+# Yarn 전역 설치
+npm install -g yarn
 
-## 🧩 Flow & UI
+# React 관련 패키지 설치
+yarn add react@18 react-dom@18 
 
-### 🧭 Flow Chart
-![Flow Chart](./images/flow_chart.drawio.png)
+# 스타일링 및 아이콘 패키지 설치
+yarn add sass classnames react-icons
 
----
+# 가상 스크롤
+yarn add react-virtualized
 
-### 🖥️ UI 미리보기
+# 라우팅
+yarn add react-router-dom
 
-| 메인 페이지 | 전체 레시피 |
-|:------------:|:------------:|
-| ![메인 페이지](./images/main_page.png) | ![전체 레시피](./images/allRecipe.png) |
+# HTTP 요청
+yarn add axios
 
-| 레시피 추가 | 레시피 수정 |
-|:------------:|:------------:|
-| ![추가 페이지](./images/createRecipe.png) | ![수정 페이지](./images/update_page.png) |
+# styled-components
+yarn add styled-components
+```
 
 ---
 
@@ -137,6 +129,7 @@ src/
      └── RecipeList/
          └── RecipeList.js
 ```
+
 ---
 
 ## ⚙️ 구현할 핵심 기능
@@ -212,65 +205,95 @@ src/
 
 ---
 
+## 🧭 API 명세서
+
+본 프로젝트에서는 **OpenWeatherMap API**와 **Kakao Map API**를 활용하여  
+사용자의 **현재 날씨 정보**와 **행정구역(위치)** 데이터를 실시간으로 조회합니다.
+
+---
+
+### 🌤️ 현재 위치 날씨 조회 API
+
+| 항목 | 내용 |
+|------|------|
+| **기능 설명** | 위도(`latitude`)와 경도(`longitude`)를 기반으로 현재 날씨 정보를 조회합니다. |
+| **요청 URL** | `https://api.openweathermap.org/data/2.5/weather` |
+| **Method** | `GET` |
+| **요청 파라미터** | <ul><li>`lat` : 위도 (예: `37.5665`)</li><li>`lon` : 경도 (예: `126.9780`)</li><li>`appid` : OpenWeather API Key</li><li>`lang` : 언어 코드 (`kr`, `en` 등)</li><li>`units` : 단위 (`metric` → 섭씨)</li></ul> |
+| **요청 예시** | ```bash https://api.openweathermap.org/data/2.5/weather?lat=37.5665&lon=126.9780&appid=YOUR_API_KEY&lang=kr&units=metric ``` |
+| **요청 헤더** | 없음 |
+| **응답 형식** | `JSON` |
+| **응답 예시 (성공)** | ```json { "coord": { "lon": 126.978, "lat": 37.5665 }, "weather": [ { "main": "Clouds", "description": "broken clouds" } ], "main": { "temp": 20.5, "feels_like": 20.2, "humidity": 60 }, "wind": { "speed": 3.5 }, "name": "Seoul" } ``` |
+| **응답 코드** | `200 OK` |
+| **에러 예시** | ```json { "cod": 401, "message": "Invalid API key." } ``` |
+| **에러 코드** | `400 Bad Request`, `401 Unauthorized` |
+| **비고** | <ul><li>무료 버전 기준 초당 60회 호출 제한</li><li>`lang="kr"` 설정 시 한글 출력 지원</li></ul> |
+
+---
+
+### 🗺️ 좌표 기반 행정구역명 조회 API (Kakao Map)
+
+| 항목 | 내용 |
+|------|------|
+| **기능 설명** | 위도(`latitude`)와 경도(`longitude`)를 이용해 해당 위치의 행정구역(구/군 단위)을 조회합니다. |
+| **요청 URL** | `https://dapi.kakao.com/v2/local/geo/coord2address.json` |
+| **Method** | `GET` |
+| **요청 파라미터** | <ul><li>`x` : 경도 (longitude)</li><li>`y` : 위도 (latitude)</li></ul> |
+| **요청 예시** | ```bash curl -v -X GET "https://dapi.kakao.com/v2/local/geo/coord2address.json?x=126.9780&y=37.5665" \ -H "Authorization: KakaoAK YOUR_API_KEY" ``` |
+| **요청 헤더** | `Authorization: KakaoAK {REST_API_KEY}` |
+| **응답 형식** | `JSON` |
+| **응답 예시 (성공)** | ```json { "documents": [ { "address": { "region_1depth_name": "서울특별시", "region_2depth_name": "중구", "region_3depth_name": "태평로1가" } } ] } ``` |
+| **응답 코드** | `200 OK` |
+| **에러 예시** | ```json { "code": -2, "msg": "Invalid API key" } ``` |
+| **에러 코드** | `400 Bad Request`, `401 Unauthorized` |
+| **비고** | <ul><li>좌표 기준: WGS84 (일반 GPS 좌표계)</li><li>무료 호출 제한: 일 30,000회</li></ul> |
+
+---
+
+### 💡 요약
+
+| API | 주요 목적 | 사용 기술 | 비고 |
+|------|-------------|------------|------|
+| **OpenWeatherMap** | 사용자 위치 기반 날씨 조회 | REST API (`GET`) | `lang=kr`, `units=metric` 사용 |
+| **Kakao Map (coord2address)** | 위도·경도를 통한 행정구역명 조회 | REST API (`GET`) | `Authorization` 헤더 필요 |
+
+---
+
+📍 **활용 예시**
+- 앱 실행 시 사용자 위치를 기반으로 실시간 날씨 데이터와 지역명 출력  
+- 지역/날씨 정보에 따라 레시피 추천 기능 제공  
+- 날씨 변화에 따른 레시피 필터링 및 UI 업데이트
+
+
+---
+
+## 🧩 Flow & UI
+
+### 🧭 Flow Chart
+![Flow Chart](./images/flow_chart.drawio.png)
+
+---
+
+### 🖥️ UI 미리보기
+
+| 메인 페이지 | 전체 레시피 |
+|:------------:|:------------:|
+| ![메인 페이지](./images/main_page.png) | ![전체 레시피](./images/allRecipe.png) |
+
+| 레시피 추가 | 레시피 수정 |
+|:------------:|:------------:|
+| ![추가 페이지](./images/createRecipe.png) | ![수정 페이지](./images/update_page.png) |
+
+---
+
 ## 👥 팀원 역할 분담
 
-### 👩‍💻 김지원
-- 주제 선정 및 일정 수립  
-- 역할 분담  
-- 레시피 더미 데이터 제작  
-- 전체 레시피 페이지 UI 구현  
-- 가상 스크롤(React-virtualized) 기능 구현  
-- 사용자 레시피 필터 기능 구현  
-- 레시피 삭제 및 수정 반영 기능 구현  
-- 페이지 CSS 통일 및 UI 개선  
-- SPA 라우팅 기능 구현  
-- 코드 통합  
+| 담당자 | 담당 페이지 | 주요 기능/역할 |
+|:--------:|:-----------------------|:--------------------------------------------|
+| **김지원** | 전체 레시피 리스트 화면 | - 프로젝트 주제 선정 및 일정 수립<br>- 팀 역할 분담 및 조율<br>- 레시피 더미 데이터 제작<br>- 전체 레시피 페이지 UI 및 필터 기능 구현<br>- 가상 스크롤 및 SPA 라우팅 적용<br>- 레시피 수정·삭제 기능 연동<br>- 페이지 CSS 통일 및 코드 통합 |
+| **박건영** | 새 레시피 작성 + 상세 페이지 | - 새 레시피 작성 및 상세 페이지 UI 구현<br>- 이미지 업로드 및 미리보기 기능 구현<br>- 수정·삭제 기능 및 홈 이동 처리<br>- useParams 기반 ID별 상세 표시<br>- Lazy & Suspense 적용<br>- CSS 분리 및 코드 구조 정리<br>- SPA 라우팅 및 페이지 전환 기능 구현 |
+| **한해찬** | 메인 화면 (Home) | - OpenWeatherMap 및 KakaoMap API 연동<br>- 날씨 기반 레시피 필터링 기능 구현<br>- 네비게이션 바 및 메인 페이지 UI 설계<br>- 다크모드 및 좋아요 기능 구현<br>- OpenWeather 아이콘 동적 변경<br>- 기능별 컴포넌트 분리 및 코드 통합<br>- Flow Chart 제작 및 SPA 라우팅 적용 |
 
----
-
-### 👨‍💻 박건영
-- 이미지 업로드 및 미리보기 기능 구현  
-- SPA 라우팅 기능 구현  
-- 레시피 클릭 시 상세 페이지 이동  
-- 네비게이션으로 상세페이지 이동  
-- useParams를 이용한 ID별 상세 표시  
-- 삭제 시 홈으로 이동  
-- 더미데이터 작성 및 구조 정리  
-- 수정 모드 기능 구현  
-- 이미지 업로드 박스 개선  
-- 상세 페이지 UI 및 기능 구현  
-- 추가 페이지 UI 및 기능 구현  
-- CSS 분리 및 정리  
-- 코드 통합  
-- Lazy & Suspense 기능 구현  
-
----
-
-### 👨‍💻 한해찬
-- OpenWeatherMap API 적용  
-- 날씨 API와 더미데이터의 날씨 필터링 기능 구현  
-- 네비게이션 바 UI 및 기능 구현  
-- KakaoMap API로 현재 사용자 지역 출력  
-- OpenWeather 아이콘을 날씨 상태에 따라 변경  
-- 메인 페이지 좋아요 버튼 기능 구현  
-- Flow Chart 제작  
-- 메인 페이지 UI 및 기능 구현  
-- 기능별 컴포넌트 분리  
-- 레시피 클릭 시 상세 페이지 이동  
-- 다크모드 기능 구현  
-- 코드 통합  
-- SPA 라우팅 기능 구현  
-
----
-
-## 💻 개발 환경
-
-| 구분 | 내용 |
-|:----:|:----|
-| **언어** | ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=Javascript&logoColor=white) ![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=CSS3&logoColor=white) |
-| **개발 도구** | ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=white) |
-| **IDE** | ![VSCode](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=VisualStudioCode&logoColor=white) |
-| **운영체제** | ![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=Windows&logoColor=white) |
 
 
 ---
@@ -279,59 +302,3 @@ src/
 - **프론트엔드** : [http://localhost:3000](http://localhost:3000)
 
 ---
-
-## 🛠 기술 스택
-
-### 프론트엔드
-- **React** : 18  
-- **React-DOM** : 18  
-- **React-Router-DOM** : 7.9.4  
-- **React-Virtualized** : 9.22.6  
-- **SASS** : 1.93.2  
-- **axios** : 1.12.2
-
----
-
-## ⚙️ 환경 변수 및 설치
-
-프로젝트 실행 전, 다음 환경 변수를 설치 및 설정해주세요.
-
-```bash
-# Yarn 전역 설치
-npm install -g yarn
-
-# React 관련 패키지 설치
-yarn add react@18 react-dom@18 
-
-# 스타일링 및 아이콘 패키지 설치
-yarn add sass classnames react-icons
-
-# 가상 스크롤
-yarn add react-virtualized
-
-# 라우팅
-yarn add react-router-dom
-
-# HTTP 요청
-yarn add axios
-
-# styled-components
-yarn add styled-components
-```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
