@@ -3,9 +3,9 @@
 ## 📌 기획의도
 저희 프로젝트 **"오늘 뭐 먹지"** 는 **날씨에 따라 적합한 음식을 추천하는 웹 애플리케이션**을 개발하고자 시작되었습니다.  
 
-기존의 레시피 추천 사이트들은 날씨 정보를 반영한 음식 추천 기능이 부족하며, 사용자가 **선호하지 않는 재료를 필터링**하는 기능 역시 제공하지 않는 경우가 많습니다.  
+기존 레시피 추천 사이트는 날씨 정보를 반영하지 못하거나, 사용자가 **싫어하는 재료를 필터링**할 수 없다는 한계가 있었습니다.
 
-이러한 한계를 보완하기 위해, 저희는 **사용자 맞춤형 음식 추천 + 개인화된 재료 필터링 기능**을 결합한 서비스를 기획하게 되었습니다.
+이러한 한계를 보완하기 위해, 저희는 **현재 날씨에 따라 어울리는 음식을 추천**하고,**개인 취향(좋아요, 싫은 재료)을 반영**하는 맞춤형 레시피 웹사이트를 만들었습니다.
 
 🔗 참고 사이트: [만개의 레시피](https://www.10000recipe.com/)  
 - 기존에는 좋아하는 종류, 상황, 재료, 방법, 테마 등만 필터링 가능  
@@ -23,8 +23,12 @@
 ---
 
 ## 👨‍👩‍👦 팀원
-- **팀장:** 김지원  
-- **팀원:** 박건영, 한해찬
+
+| 팀장 | 팀원 | 팀원 |
+|:----:|:----:|:----:|
+| [<img src="https://github.com/jwantit.png" width="80" height="80">](https://github.com/jwantit) | [<img src="https://github.com/keonyeong.png" width="80" height="80">](https://github.com/keonyeong) | [<img src="https://github.com/haechan419.png" width="80" height="80">](https://github.com/haechan419) |
+| **김지원** | **박건영** | **한해찬** |
+
 
 ---
 
@@ -136,6 +140,15 @@ src/
 ---
 
 ## ⚙️ 구현할 핵심 기능
+
+### 레시피 목록 표시 및 필터링
+- 좋아하는 음식만 보기
+- 싫어하는 재료 제외
+- 날씨별 필터링
+
+### 좋아요(Like) 기능
+- 각 레시피 카드에 ❤️ 버튼을 클릭하여 좋아요 동
+
 
 ### 🧾 CRUD 기능
 - 새로운 레시피를 사용자가 직접 등록할 수 있음  
@@ -254,10 +267,11 @@ src/
 
 | 구분 | 내용 |
 |:----:|:----|
-| **언어** | `JavaScript`, `CSS` |
-| **개발 도구** | `React` |
-| **IDE** | `Visual Studio Code` |
-| **운영체제** | `Windows` |
+| **언어** | ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=Javascript&logoColor=white) ![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=CSS3&logoColor=white) |
+| **개발 도구** | ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=white) |
+| **IDE** | ![VSCode](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=VisualStudioCode&logoColor=white) |
+| **운영체제** | ![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=Windows&logoColor=white) |
+
 
 ---
 
@@ -304,6 +318,7 @@ yarn add axios
 # styled-components
 yarn add styled-components
 ```
+
 
 
 
