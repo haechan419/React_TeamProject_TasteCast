@@ -111,9 +111,11 @@ src/
          └── RecipeList.js
 ```
 
+---
+
 ## ⚙️ 구현할 핵심 기능
 
-
+---
 
 ### 🍱 **레시피 목록 표시 및 필터링**
 
@@ -125,7 +127,7 @@ src/
 
 ![Filter](./images/Filter.gif)
 
-
+---
 
 ### ❤️ **좋아요(Like) 기능**
 
@@ -137,7 +139,7 @@ src/
 
 ![Like](./images/like.gif)
 
-
+---
 
 ### 🧾 **CRUD 기능**
 
@@ -152,7 +154,7 @@ src/
 |:-----------------------------------------:|:-------------:|
 | ![CRU](./images/recipeCreate.gif) | ![D](./images/D.gif) |
 
-
+---
 
 ### 🧭 **SPA (Single Page Application)**
 
@@ -164,7 +166,7 @@ src/
 
 ![SPA](./images/router.gif)
 
-
+---
 
 ### 📜 **가상 스크롤 (Virtual Scroll)**
 
@@ -175,7 +177,7 @@ src/
 
 ![가상 스크롤](./images/scroll_update.gif)
 
-
+---
 
 ### ⚡ **성능 최적화**
 
@@ -190,7 +192,7 @@ src/
 - **Lazy Loading** : 이미지 및 컴포넌트 지연 로딩으로 초기 렌더링 속도 개선  
 - **불필요한 렌더링 제거** : 상태 관리 최소화 및 의존성 정리  
 
-
+---
 
 ### ⚡ **코드 스플리팅 (Code Splitting)**
 
@@ -201,7 +203,7 @@ src/
 
 ![코드 스플리팅](./images/lazy_suspense.gif)
 
-
+---
 
 ### 🌍 **외부 데이터 연동**
 
@@ -213,7 +215,7 @@ src/
 
 ![외부 데이터 연동](./images/main.gif)
 
-
+---
 
 ### 📱 **반응형 웹 (Responsive Web)**
 
@@ -225,7 +227,7 @@ src/
 
 ![반응형 웹](./images/responsive.gif)
 
-
+---
 
 ### 🌙 **다크모드 (Dark Mode)**
 
@@ -235,6 +237,11 @@ src/
 - 상태 저장으로 새로고침 후에도 유지  
 
 ![다크모드](./images/darkMode.gif)
+
+---
+
+> ✨ **한눈에 보기 좋은 UI/UX와 효율적인 코드 구조로 구성된 React 기반 SPA 프로젝트입니다.**
+
 
 ---
 
@@ -356,6 +363,7 @@ yarn add styled-components
 앞으로는 **사용자 리뷰**, **AI 기반 레시피 추천**, **커뮤니티 기능** 등으로 기능을 확장하여 더욱 풍부한 사용자 경험을 제공하는 방향으로 발전시킬 계획입니다.  
 
 감사합니다.
+
 
 
 
