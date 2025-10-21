@@ -130,7 +130,7 @@ src/
 - 기존 레시피 수정 가능  
 - 저장된 레시피 삭제 가능
 
-![CRU](./images/CRU.gif)
+![CRU](./images/recipeCreate.gif)
 
 ![D](./images/D.gif)
 
@@ -181,7 +181,7 @@ src/
 - **Kakao Map API**로 지역명(구/군) 조회  
 - **OpenWeather API**로 지역의 날씨 정보 확인
 
-![외부 데이터 연동](./images/api.gif)
+![외부 데이터 연동](./images/main.gif)
 
 ---
 
@@ -189,7 +189,7 @@ src/
 - **PC / 태블릿 / 모바일** 환경 대응  
 - 네비게이션바 및 메인 화면 반응형 디자인 적용
 
-![반응형 웹](./images/web.gif)
+![반응형 웹](./images/responsive.gif)
 
 ---
 
@@ -320,6 +320,7 @@ yarn add styled-components
 앞으로는 **사용자 리뷰**, **AI 기반 레시피 추천**, **커뮤니티 기능** 등으로 기능을 확장하여 더욱 풍부한 사용자 경험을 제공하는 방향으로 발전시킬 계획입니다.  
 
 감사합니다.
+
 
 
 
