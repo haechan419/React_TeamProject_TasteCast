@@ -54,7 +54,7 @@
 | 이름 | GitHub | 주요 담당 기능 |
 |:----:|:-------:|:----------------|
 | [<img src="https://github.com/jwantit.png" width="80" height="80">](https://github.com/jwantit)<br>**김지원 (팀장)** | [@jwantit](https://github.com/jwantit) | 🔹 **프로젝트 총괄 및 일정 관리**<br>🔹 주제 선정 · 역할 분담 조율<br>🔹 레시피 더미 데이터 제작<br>🔹 전체 레시피 페이지 UI 구현<br>🔹 가상 스크롤 기능 구현<br>🔹 사용자 레시피 필터 기능 구현<br>🔹 레시피 수정 및 삭제 기능 반영<br>🔹 CSS 통일 및 코드 통합 |
-| [<img src="https://github.com/keonyeong.png" width="80" height="80">](https://github.com/keonyeong)<br>**박건영** | [@keonyeong](https://github.com/keonyeong) | 🔹 **새 레시피 작성 및 상세 페이지 담당**<br>🔹 이미지 업로드 및 미리보기 기능 구현<br>🔹 수정·삭제 기능 및 홈 이동 처리<br>🔹 useParams를 이용한 ID별 상세 표시<br>🔹 Lazy & Suspense 기능 구현<br>🔹 CSS 구조 분리 및 코드 정리<br>🔹 SPA 라우팅 및 페이지 전환 구현 |
+| [<img src="https://github.com/keonyeong4550.png" width="80" height="80">](https://github.com/keonyeong4550)<br>**박건영** | [@keonyeong4550](https://github.com/keonyeong4550) | 🔹 **새 레시피 작성 및 상세 페이지 담당**<br>🔹 이미지 업로드 및 미리보기 기능 구현<br>🔹 수정·삭제 기능 및 홈 이동 처리<br>🔹 useParams를 이용한 ID별 상세 표시<br>🔹 Lazy & Suspense 기능 구현<br>🔹 CSS 구조 분리 및 코드 정리<br>🔹 SPA 라우팅 및 페이지 전환 구현 |
 | [<img src="https://github.com/haechan419.png" width="80" height="80">](https://github.com/haechan419)<br>**한해찬** | [@haechan419](https://github.com/haechan419) | 🔹 **메인 화면 및 외부 API 연동 담당**<br>🔹 OpenWeatherMap & KakaoMap API 적용<br>🔹 날씨 기반 레시피 필터링 기능 구현<br>🔹 네비게이션 바 UI 및 기능 구현<br>🔹 OpenWeather 아이콘 동적 변경<br>🔹 좋아요(Like) 기능 및 다크모드 구현<br>🔹 Flow Chart 제작 및 코드 통합<br>🔹 SPA 라우팅 구조 설계 |
 
 ---
@@ -417,6 +417,7 @@ yarn add styled-components
 
 앞으로도 본 프로젝트를 기반으로 **더 완성도 높은 서비스형 웹 애플리케이션**으로 발전시켜 나갈 계획입니다.  
 > 함께한 팀원들과의 협업을 통해 **작은 아이디어를 실현 가능한 서비스로 구현하는 경험**을 얻은 뜻깊은 프로젝트였습니다. 🙌
+
 
 
 
