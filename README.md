@@ -63,10 +63,11 @@
 
 | 구분 | 내용 |
 |:----:|:----|
-| **언어** | ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=Javascript&logoColor=white) ![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=CSS3&logoColor=white) |
+| **언어** | ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=Javascript&logoColor=white) ![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=CSS3&logoColor=white) ![SCSS](https://img.shields.io/badge/SCSS-CC6699?style=for-the-badge&logo=Sass&logoColor=white) |
 | **개발 도구** | ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=white) |
 | **IDE** | ![VSCode](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=VisualStudioCode&logoColor=white) |
 | **운영체제** | ![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=Windows&logoColor=white) |
+
 
 ---
 
@@ -415,6 +416,7 @@ yarn add styled-components
 
 앞으로도 본 프로젝트를 기반으로 **더 완성도 높은 서비스형 웹 애플리케이션**으로 발전시켜 나갈 계획입니다.  
 > 함께한 팀원들과의 협업을 통해 **작은 아이디어를 실현 가능한 서비스로 구현하는 경험**을 얻은 뜻깊은 프로젝트였습니다. 🙌
+
 
 
 
